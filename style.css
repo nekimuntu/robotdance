@@ -1,0 +1,167 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+h5 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.robots {
+	display: flex;
+	flex-direction: column;
+	align-content:center;
+	/* justify-content: center; */
+	justify-content: flex-center;
+
+}
+/* .android {
+	display:flex;
+	flex-flow: column;
+	align-content:center;
+	justify-content: flex-center;
+} */
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	flex: auto;
+	 background-color: #5f93e8;
+}
+
+.head { 
+	display: flex;
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	/* border-top-left-radius,
+		border-top-right-radius,
+		border-bottom-right-radius,
+		border-bottom-left-radius. */
+	border-radius: 200px 200px 0px 0px; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	
+	display: flex;
+	align-items:inherit;
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 211px;
+	margin: 0 auto;
+	display: flex; 
+	align-items: center;
+	justify-items: center;
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+	display: flex;
+	align-items: center;
+} 
+
+
+.left_arm { 
+	margin-right: 10px; 
+	transition: all 0.3s linear;
+} 
+.left_arm:hover {
+	-webkit-transform: rotate(90deg);
+	-webkit-transform:translateX(30deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+	-webkit-transform:translate(30deg);
+    transform: rotate(90deg);	
+	
+		-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+		-moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+		-o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+		box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+	
+}
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	display: flex;
+	align-items: center;
+} 
+
+.lower_body { 
+	width: 161px; 
+	height: 71px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	/* margin-left: 45px;  */
+	margin-left : 10px;
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	background-color: black;
+	width: 40px; 
+	height: 40px; 
+	top: 90px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 100px; 
+}
+
+
+
+
+
